@@ -38,8 +38,7 @@ const AboutSection = () => {
       ),
       title: "BS Software Engineering (Ongoing)",
       institution: "Sindh Madressatul Islam University (SMIU), Karachi",
-    }
-    
+    },
   ];
 
   return (
@@ -99,17 +98,16 @@ const AboutSection = () => {
             style={{ y: yText }}
             className="text-cyan-50/90 dark:text-cyan-900/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
           >
-            My journey through medical sciences has equipped me with both
+            My academic journey has equipped me with a solid foundation in{" "}
             <span className="text-cyan-400 dark:text-cyan-600 font-medium">
-              {" "}
-              technical knowledge{" "}
+              software development{" "}
             </span>
-            and{" "}
+            and a{" "}
             <span className="text-cyan-400 dark:text-cyan-600 font-medium">
-              {" "}
-              compassionate perspective{" "}
+              problem-solving mindset{" "}
             </span>
-            to excel in healthcare.
+            to tackle complex technical challenges and thrive in the tech
+            industry.
           </motion.p>
         </motion.div>
 
