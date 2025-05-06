@@ -152,8 +152,8 @@ const AboutSection = () => {
             <div className="w-8 h-px bg-cyan-400/50 dark:bg-cyan-600/50"></div>
           </div>
           <p className="text-cyan-100/80 dark:text-cyan-900/80 italic mt-4 mb-10 max-w-2xl mx-auto text-lg">
-            "The art of medicine consists of amusing the patient while nature
-            cures the disease." — Voltaire
+            "The art of software development consists of engaging the user while
+            innovation solves the problem."
           </p>
         </motion.div>
       </motion.div>
