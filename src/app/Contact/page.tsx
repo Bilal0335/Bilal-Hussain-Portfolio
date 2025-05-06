@@ -175,7 +175,7 @@ const ContactSection = () => {
                 </span>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/bilalhussain42201/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-3 bg-cyan-800/50 dark:bg-cyan-200/50 rounded-lg border border-cyan-400/30 dark:border-cyan-600/30 hover:bg-cyan-700/50 dark:hover:bg-cyan-300/50 hover:text-white dark:hover:text-gray-900 transition-all"
@@ -186,7 +186,7 @@ const ContactSection = () => {
                 </span>
               </a>
               <a
-                href="https://discord.com/users/musfirah_tabassum"
+                href="https://discord.com/users/bilal42201"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-3 bg-cyan-800/50 dark:bg-cyan-200/50 rounded-lg border border-cyan-400/30 dark:border-cyan-600/30 hover:bg-cyan-700/50 dark:hover:bg-cyan-300/50 hover:text-white dark:hover:text-gray-900 transition-all"
