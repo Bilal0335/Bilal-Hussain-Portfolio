@@ -38,12 +38,12 @@ const SkillsSection = () => {
         {
           name: "Figma",
           icon: <FaFigma className="text-2xl text-[#F24E1E]" />,
-          level: 90,
+          level: 60,
         },
         {
           name: "Canva",
           icon: <SiCanva className="text-2xl text-[#31A8FF]" />,
-          level: 85,
+          level: 75,
         },
       ],
     },
@@ -58,12 +58,12 @@ const SkillsSection = () => {
         {
           name: "CSS3",
           icon: <FaCss3Alt className="text-2xl text-[#1572B6]" />,
-          level: 90,
+          level: 80,
         },
         {
           name: "JavaScript",
           icon: <FaJs className="text-2xl text-[#F7DF1E]" />,
-          level: 85,
+          level: 80,
         },
       ],
     },
@@ -73,17 +73,17 @@ const SkillsSection = () => {
         {
           name: "React",
           icon: <FaReact className="text-2xl text-[#61DAFB]" />,
-          level: 85,
+          level: 75,
         },
         {
           name: "Next.js",
           icon: <SiNextdotjs className="text-2xl text-black dark:text-white" />,
-          level: 80,
+          level: 75,
         },
         {
           name: "Tailwind",
           icon: <SiTailwindcss className="text-2xl text-[#06B6D4]" />,
-          level: 90,
+          level: 70,
         },
       ],
     },
@@ -93,12 +93,12 @@ const SkillsSection = () => {
         {
           name: "TypeScript",
           icon: <SiTypescript className="text-2xl text-[#3178C6]" />,
-          level: 80,
+          level: 70,
         },
         {
           name: "Python",
           icon: <SiPython className="text-2xl text-yellow-600" />,
-          level: 80,
+          level: 60,
         },
       ],
     },

@@ -347,7 +347,7 @@ const Hero = () => {
               >
                 <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full border-4 border-cyan-300 dark:border-cyan-600 overflow-hidden shadow-xl bg-white relative group">
                   <Image
-                    src="/mt.jpg"
+                    src="/bilalimg.png"
                     alt="Muhammad Bilal Hussain"
                     width={320}
                     height={320}
