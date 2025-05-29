@@ -39,6 +39,14 @@ const AboutSection = () => {
       title: "BS Software Engineering (Ongoing)",
       institution: "Sindh Madressatul Islam University (SMIU), Karachi",
     },
+ {
+    icon: (
+      <FaGraduationCap className="text-cyan-400 dark:text-cyan-600 text-xl" />
+    ),
+    title: "Certified Cloud Applied Generative AI Engineer (GenEng)",
+    institution: "Governor House, Karachi",
+    detail: "Completed during ongoing BS studies",
+  },
   ];
 
   return (
