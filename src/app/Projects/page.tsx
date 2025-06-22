@@ -25,11 +25,11 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured online store built with Next.js.",
+      title: "Panaverse DAO Official Website",
+      description: "Official website for the Presidential Initiative for Artificial Intelligence and Computing (PIAIC), featuring details on the Certified Web 3.0 and Metaverse Developer program.",
       tags: ["Next.js", "Tailwind CSS"],
-      image: "/project1.jpg",
-      live: "https://uiux-hackathon-ten.vercel.app/",
+      image: "/panaverse-dao.png",
+      live: "https://panaverse-dao-stagings.vercel.app/",
       icon: (
         <SiNextdotjs className="text-xl md:text-2xl text-black dark:text-white" />
       ),
