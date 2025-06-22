@@ -26,7 +26,8 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Panaverse DAO Official Website",
-      description: "Official website for the Presidential Initiative for Artificial Intelligence and Computing (PIAIC), featuring details on the Certified Web 3.0 and Metaverse Developer program.",
+      description:
+        "Official website for the Presidential Initiative for Artificial Intelligence and Computing (PIAIC), featuring details on the Certified Web 3.0 and Metaverse Developer program.",
       tags: ["Next.js", "Tailwind CSS"],
       image: "/panaverse-dao.png",
       live: "https://panaverse-dao-stagings.vercel.app/",
@@ -159,67 +160,68 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <a
               key={index}
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              className="group relative overflow-hidden rounded-lg md:rounded-xl border border-gray-800 dark:border-gray-300 bg-gray-900/50 dark:bg-gray-100/50 backdrop-blur-sm shadow-lg hover:shadow-xl hover:shadow-cyan-400/10 dark:hover:shadow-cyan-600/10 transition-all duration-300 hover:-translate-y-1"
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+              aria-label={`View ${project.title} live demo`}
             >
-              <div className="relative h-40 sm:h-36 md:h-44 lg:h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-teal-400/10 dark:from-cyan-600/10 dark:to-teal-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex gap-2 md:gap-3">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 md:p-2.5 bg-gray-900 dark:bg-gray-200 rounded-full border border-gray-700 dark:border-gray-400 hover:bg-teal-400 dark:hover:bg-teal-600 hover:text-gray-900 dark:hover:text-gray-100 transition-all"
-                      aria-label={`View ${project.title} live demo`}
-                    >
-                      <FiExternalLink className="text-lg md:text-xl" />
-                    </a>
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                className="group relative overflow-hidden rounded-lg md:rounded-xl border border-gray-800 dark:border-gray-300 bg-gray-900/50 dark:bg-gray-100/50 backdrop-blur-sm shadow-lg hover:shadow-xl hover:shadow-cyan-400/10 dark:hover:shadow-cyan-600/10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="relative h-40 sm:h-36 md:h-44 lg:h-48 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-teal-400/10 dark:from-cyan-600/10 dark:to-teal-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="flex gap-2 md:gap-3">
+                      <span className="p-2 md:p-2.5 bg-gray-900 dark:bg-gray-200 rounded-full border border-gray-700 dark:border-gray-400 text-teal-400 dark:text-teal-600 cursor-pointer">
+                        <FiExternalLink className="text-lg md:text-xl" />
+                      </span>
+                    </div>
+                  </div>
+                  <div className="absolute top-3 left-3 md:top-4 md:left-4 bg-gray-900/80 dark:bg-gray-200/80 p-1.5 md:p-2 rounded-md md:rounded-lg backdrop-blur-sm">
+                    {project.icon}
+                  </div>
+                  <div className="h-full w-full relative">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.onerror = null;
+                        target.src = "/project-fallback.jpg";
+                      }}
+                    />
                   </div>
                 </div>
-                <div className="absolute top-3 left-3 md:top-4 md:left-4 bg-gray-900/80 dark:bg-gray-200/80 p-1.5 md:p-2 rounded-md md:rounded-lg backdrop-blur-sm">
-                  {project.icon}
-                </div>
-                {/* Actual Image Implementation */}
-                <div className="h-full w-full relative">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.onerror = null;
-                      target.src = "/project-fallback.jpg";
-                    }}
-                  />
-                </div>
-              </div>
 
-              <div className="p-4 md:p-5 lg:p-6">
-                <h3 className="text-lg md:text-xl font-bold text-cyan-100 dark:text-cyan-900 mb-1 md:mb-2 line-clamp-1">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 dark:text-gray-500 text-sm md:text-base mb-3 md:mb-4 line-clamp-2">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-1.5 md:gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-2.5 md:py-1 rounded-full bg-gray-800 dark:bg-gray-300 text-cyan-300 dark:text-cyan-700 border border-gray-700 dark:border-gray-400"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="p-4 md:p-5 lg:p-6">
+                  <h3 className="text-lg md:text-xl font-bold text-cyan-100 dark:text-cyan-900 mb-1 md:mb-2 line-clamp-1">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 dark:text-gray-500 text-sm md:text-base mb-3 md:mb-4 line-clamp-2">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 md:gap-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-2.5 md:py-1 rounded-full bg-gray-800 dark:bg-gray-300 text-cyan-300 dark:text-cyan-700 border border-gray-700 dark:border-gray-400"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </a>
           ))}
         </div>
 
