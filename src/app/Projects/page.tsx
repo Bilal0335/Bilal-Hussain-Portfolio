@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiMongodb,
+  SiHtml5,
 } from "react-icons/si";
 import Image from "next/image";
 
@@ -52,6 +53,15 @@ const ProjectsSection = () => {
       image: "/project3.jpg",
       live: "https://final-hackathon-3-zzop.vercel.app/",
       icon: <SiTypescript className="text-xl md:text-2xl text-[#3178C6]" />,
+    },
+    {
+      title: "Responsive Barber Shop Website",
+      description:
+        "A fully responsive hair studio website built with HTML and CSS. Features smooth scroll, testimonials, image overlays, and interactive navigation for a modern barber shop experience.",
+      tags: ["HTML", "CSS", "Responsive Design"],
+      image: "/hair-studio.png",
+      live: "https://responsive-barber-shop.vercel.app/", 
+      icon: <SiHtml5 className="text-xl md:text-2xl text-[#E34F26]" />,
     },
     {
       title: "E-Commerce Website",
