@@ -34,7 +34,9 @@ const ProjectsSection = () => {
       tags: ["Next.js", "Tailwind CSS"],
       image: "/panaverse-dao.png",
       live: "https://panaverse-dao-stagings.vercel.app/",
-      icon: <SiNextdotjs className="text-xl md:text-2xl text-black dark:text-white" />,
+      icon: (
+        <SiNextdotjs className="text-xl md:text-2xl text-black dark:text-white" />
+      ),
     },
     {
       title: "Minecraft Website",
@@ -53,6 +55,17 @@ const ProjectsSection = () => {
       image: "/project3.jpg",
       live: "https://final-hackathon-3-zzop.vercel.app/",
       icon: <SiTypescript className="text-xl md:text-2xl text-[#3178C6]" />,
+    },
+    {
+      title: "Real Estate Website",
+      description:
+        "A responsive real estate landing page with login, sign-up, listings, and property highlights built using HTML, CSS, and Font Awesome.",
+      tags: ["HTML", "CSS"],
+      image: "/Rent House.png",
+      live: "https://rstatebybilal.vercel.app/",
+      icon: (
+        <i className="fa-solid fa-house text-xl md:text-2xl text-blue-600" />
+      ),
     },
     {
       title: "Responsive Barber Shop Website",
@@ -105,7 +118,8 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-20 md:w-24 h-0.5 md:h-1 bg-cyan-400/70 dark:bg-cyan-600/70 mx-auto mb-4 md:mb-5"></div>
           <p className="text-gray-300 dark:text-gray-600 text-sm md:text-base lg:text-lg max-w-2xl mx-auto px-2 md:px-0">
-            A selection of my recent work showcasing diverse technologies and solutions
+            A selection of my recent work showcasing diverse technologies and
+            solutions
           </p>
         </motion.div>
 
